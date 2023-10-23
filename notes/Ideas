@@ -5,8 +5,7 @@ needs for each item:
     name
     description
     picture
-    difficulty?
-
+    
 needs to have 5 different buttons to give a rating to the dish 
 
 attempt to make and area to be able to leave a comment along with your rating
