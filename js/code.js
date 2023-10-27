@@ -33,5 +33,16 @@ fetch('http://localhost:3000/dishes')
         const postRating = document.createElement('div');
         postRating.className = 'post-rating';
 
-        
+        const ratingLabel = document.createElement('span');
+        ratingLabel.textContent = 'Your Rating: ';
+        ratingLabel.classNAme = 'rating-label';
+
+        const averageRating = document.createElement('div');
+        averageRating.textContent = 'Average Rating: ';
+        averageRating.className = 'average-rating';
+
+        const averageRatingValue = document.creatElement('span');
+        averageRatingValue.textContent = calculateAverageRating(post.id, post.rating).toFixed(1);
+        averageRating.className ='average-rating-value';
+        averageRating.appendChild(averageRatingValue)
     }
