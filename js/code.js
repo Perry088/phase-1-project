@@ -87,3 +87,4 @@ fetch('http://localhost:3000/dishes')
         }
         return ratings[postId]
     }
+    
