@@ -79,4 +79,11 @@ fetch('http://localhost:3000/dishes')
         averageRatingValue.textContent = calculateAverageRating(postId, rating).toFixed(1);
     }
 
-    
+    function calculateAverageRating(postId, newRating){
+        if (!ratings[postId]){
+            ratings[postId] = newRating;
+        } else{
+            ratings[postId] = (ratings[postId] + newRating) / 2;
+        }
+        return ratings[postId]
+    }
