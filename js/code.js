@@ -70,3 +70,13 @@ fetch('http://localhost:3000/dishes')
         return postDiv;
 
     }
+
+    const ratings = {};
+
+    function ratePost(postId, rating){
+        ratings[postId] = rating;
+        const averageRatingValue = document.querySelector(`.post[data-id="${postId}"] .average-rating-value`);
+        averageRatingValue.textContent = calculateAverageRating(postId, rating).toFixed(1);
+    }
+
+    
