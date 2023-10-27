@@ -10,6 +10,12 @@ fetch('http://localhost:3000/dishes')
     })
     .catch(error => console.error("Error fetching data:", error));
 
-    fucntion createPostElement(post){
-        
+    function createPostElement(post){
+        const postDiv = document.createElement('div');
+        postDiv.className = 'post';
+
+        const postImage = document.createElement('img');
+        postImage.src = post.image;
+        postImage.alt = 'Post Image';
+        postImage.className = 'post-image';
     }
