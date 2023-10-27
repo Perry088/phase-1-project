@@ -56,4 +56,17 @@ fetch('http://localhost:3000/dishes')
             rateButton.addEventListener("click", () => ratePost(post.id, i));
             rateButtons.appendChild(rateButton);
        }
+        postRating.appendChild(ratingLabel);
+        postRating.appendChild(rateButtons);
+        postRating.appendChild(averageRating);
+    
+        postContent.appendChild(postName);
+        postContent.appendChild(postDescription);
+        postContent.appendChild(postRating);
+    
+        postDiv.appendChild(postImage);
+        postDiv.appendChild(postContent);
+    
+        return postDiv;
+
     }
