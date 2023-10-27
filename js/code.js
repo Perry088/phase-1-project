@@ -19,10 +19,19 @@ fetch('http://localhost:3000/dishes')
         postImage.alt = 'Post Image';
         postImage.className = 'post-image';
         
-        const postContent = document,createElement('div');
+        const postContent = document.createElement('div');
         postContent. className = 'post-content';
 
         const postName = document.createElement('h1');
         postName.textContent = post.name;
         postName.className = 'post-name';
+
+        const postDescription = document.creatElement ('p');
+        postDescription.textContent = post.Description;
+        postDescription.className = 'post-description';
+
+        const postRating = document.createElement('div');
+        postRating.className = 'post-rating';
+
+        
     }
