@@ -9,3 +9,7 @@ fetch('http://localhost:3000/dishes')
         });
     })
     .catch(error => console.error("Error fetching data:", error));
+
+    fucntion createPostElement(post){
+        
+    }
