@@ -45,4 +45,15 @@ fetch('http://localhost:3000/dishes')
         averageRatingValue.textContent = calculateAverageRating(post.id, post.rating).toFixed(1);
         averageRating.className ='average-rating-value';
         averageRating.appendChild(averageRatingValue)
+
+        const rateButtons = document.createElement("div");
+        rateButtons.className = "rate-buttons";
+        for (let i = 1; i <= 5; i++) {
+            const rateButton = document.createElement("button");
+            rateButton.textContent = i;
+            rateButton.className = "rate-button";
+            rateButton.dataset.rating = i;
+            rateButton.addEventListener("click", () => ratePost(post.id, i));
+            rateButtons.appendChild(rateButton);
+       }
     }
