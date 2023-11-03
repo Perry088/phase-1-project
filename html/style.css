@@ -1,0 +1,41 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+.h1 {
+    font-size: 24px;
+    margin: 0;
+    color: black;
+}
+
+.post {
+    
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    width: 500px; /* Adjust the width as needed */
+    background-color: #f9f9f9;
+}
+
+ img {
+    width: 500px;
+}
+
+.content {
+    margin-top: 10px;
+    color: black;
+}
+
+.description {
+    margin: 10px 0;
+    color: black;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+}
