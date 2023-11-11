@@ -10,12 +10,32 @@
 				color: white;
 				text-align: center;
 			}
+			header{
+			position:fixed;
+			top:0;
+			left:0;
+			width:100%;
+			background-color: white;
+			color: black;
+			padding: 10px;
+			}
 		</style>
 	
 </head>
 <body>
+	<header>
 		<h1>What's On The Menu</h1>
+	</header>
 		<div id="post-container">
+			<form id="new-dish" action="#" method="post">
+				<label for="name">Dish</label>
+				<input type="text" id="name" name="name">
+				<label for="name">Image URL</label>
+				<input type="text" id="image_url" name="image_url">
+				<label for="description">Dish Description</label>
+				<input id="description" name="description" placeholder="description"></input>
+				<button type="submit">Add Dish</button> 
+			</form>
 		</div>
 </body>
 </html>

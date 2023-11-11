@@ -9,3 +9,8 @@ needs for each item:
 needs to have 5 different buttons to give a rating to the dish 
 
 attempt to make and area to be able to leave a comment along with your rating
+
+for the rating 
+first set up an empty array for each item in the database
+then make it to when the rating buttosn are pressed it pushes that number into the array 
+and finally make an average function that will post the average updated rating every time a rating is pressed
