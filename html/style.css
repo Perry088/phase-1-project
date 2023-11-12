@@ -1,50 +1,65 @@
 body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
     margin: 0;
-}
-.h1 {
-    font-size: 24px;
-    margin: 0;
-    padding:0;
-    color: black;
-    height: 100vh;
-}
-
-.post {
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    font-family: Impact,sans-serif;
+    letter-spacing: 3px;
     
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 20px;
-    margin: 10px;
-    width: 500px; /* Adjust the width as needed */
-    background-color: #f9f9f9;
 }
-
- img {
-    width: 500px;
-}
-
-.content {
-    margin-top: 10px;
-    color: black;
-}
-
-.description {
-    margin: 10px 0;
-    color: black;
-}
-
-.rating {
-    display: flex;
-    align-items: center;
-}
-form{
-    width:50%;
-    margin: auto;
-    position: absolute;
-    top: 0%;
-    left: 50%;
-}
+header{
+    background-color: rgb(51, 40, 117);
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      font-size: xx-large;
+    }
+    main {
+        max-width: 600px;
+        margin: 20px auto;
+        border: 5px solid #ddd;
+        color:rgb(51, 40, 117) ;
+      }
+      form {
+        text-align: center;
+        background-color: rgb(155, 233, 247);
+        font-size: large;
+      }
+      form label,
+    form input{
+      display: block;
+      margin: 10px auto;
+      margin-bottom: 10px;
+      border-color:rgb(155, 233, 247) ;
+      border-radius: 12px;
+      width: 300px;
+      height: 30px;
+    }
+    button{
+        background-color: rgb(51, 40, 117);
+        color:#fff;
+        font-family: Impact,sans-serif;
+        font-size: larger;
+        letter-spacing: 2px;
+        border-radius: 12px;
+        transition-duration: 0.5s;
+        width: 200px;
+        height: 50px;
+    
+    }
+    button:hover{
+        background-color: #fff;
+        color:rgb(51, 40, 117);
+    }
+      .post {
+        border-bottom: 1px solid #ddd;
+        padding: 10px;
+        text-align: left;
+        background-color: rgb(155, 233, 247);
+      }
+      .post img{
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+        border-radius: 12px;
+      }
