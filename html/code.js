@@ -45,20 +45,26 @@ function initialize(){
 initialize()
 
 
-    // const ratings = {};
+document.querySelector('#new-dish').addEventListener('submit', handleSubmit)
 
-    // function ratePost(postId, rating){
-    //     ratings[postId] = rating;
-    //     const averageRatingValue = document.querySelector(`.post[data-id="${postId}"] .average-rating-value`);
-    //     averageRatingValue.textContent = calculateAverageRating(postId, rating).toFixed(1);
-    // }
-
-    // function calculateAverageRating(postId, newRating){
-    //     if (!ratings[postId]){
-    //         ratings[postId] = newRating;
-    //     } else{
-    //         ratings[postId] = (ratings[postId] + newRating) / 2;
-    //     }
-    //     return ratings[postId]
-    // }
-    
+function handleSubmit(e){
+    e.preventDefault()
+    let dish = {
+        name:e.target.name.value,
+        image:e.target.image_url.value,
+        description:e.target.description.value
+    }
+    renderOneDish(dish)
+    addDish(dish)
+}
+function addDish(dish){
+    fetch('http://localhost:3000/dishes', {
+        method: 'POST',
+        headers:{
+            'Content-Type': 'application/json'
+        },
+        body:JSON.stringify(dish)
+    })
+    .then(res => res.json())
+    .then(dish => console.log(dish))
+}
