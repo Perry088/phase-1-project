@@ -1,3 +1,5 @@
+//post 
+
 function renderOneDish(dish){
     let post =document.createElement('li')
     post.className = 'post'
@@ -6,29 +8,28 @@ function renderOneDish(dish){
    <div class='content'>
         <h1>${dish.name}</h1>
         <p>${dish.description}</p>
-            <div class='rating'>
-                <div class='big-star'>
-                    <i class='fas fa-star></i>
-                    <p class= 'selected-rating></p>
-                </div>
-                <h3>Rate This Dish</h3>
-                <ul class- 'stars'>
-                    <li class='star' data-value='1'>
-                        <i class='fas fa-star'></i>
-                    </li>
-                    <li class='star' data-value='2'>
-                        <i class='fas fa-star'></i>
-                    </li>
-                    <li class='star' data-value='3'>
-                        <i class='fas fa-star'></i>
-                    </li>
-                    <li class='star' data-value='4'>
-                        <i class='fas fa-star'></i>
-                    </li>
-                    <li class='star' data-value='5'>
-                        <i class='fas fa-star'></i>
-                    </li>
-        </div>`
+        <p>
+            likes:<span class='like-count'>${dish.likes}</span>
+        </p>
+        <p>
+            dislikes:<span class='dislike-count'>${dish.dislikes}</span>
+        </p>
+    </div>
+    <div class='buttons'>
+        <button id='like'>Like</button>
+        <button id='dislike'>dislike</button>
+    </div>`
+    
+    post.querySelector('#like').addEventListener('click', () =>{
+        dish.likes += 1;
+        post.querySelector('.like-count').textContent = dish.likes
+        updateLikes(dish)
+    })
+    post.querySelector('#dislike').addEventListener('click', () =>{
+        dish.dislikes +=1;
+        post.querySelector('.dislike-count').textContent = dish.dislikes
+        updateDislikes(dish)
+    })
 
     document.querySelector('#post-container').appendChild(post)
 }
@@ -62,6 +63,30 @@ function addDish(dish){
         method: 'POST',
         headers:{
             'Content-Type': 'application/json'
+        },
+        body:JSON.stringify(dish)
+    })
+    .then(res => res.json())
+    .then(dish => console.log(dish))
+}
+
+function updateLikes(dish){
+    fetch(`http://localhost:3000/dishes/${dish.id}`, {
+        method:'PATCH',
+        headers:{
+            'content-type':'application/json'
+        },
+        body:JSON.stringify(dish)
+    })
+    .then(res => res.json())
+    .then(dish => console.log(dish))
+}
+
+function updateDislikes(dish){
+    fetch(`http://localhost:3000/dishes/${dish.id}`, {
+        method:'PATCH',
+        headers:{
+            'content-type':'application/json'
         },
         body:JSON.stringify(dish)
     })
