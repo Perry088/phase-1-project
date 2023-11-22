@@ -8,16 +8,18 @@ function renderOneDish(dish){
    <div class='content'>
         <h1>${dish.name}</h1>
         <p>${dish.description}</p>
-        <p>
-            likes:<span class='like-count'>${dish.likes}</span>
-        </p>
-        <p>
-            dislikes:<span class='dislike-count'>${dish.dislikes}</span>
-        </p>
     </div>
     <div class='buttons'>
         <button id='like'>Like</button>
         <button id='dislike'>dislike</button>
+    </div>
+    <div>
+        <p>
+            <span class='like-count'>likes</span>
+        </p>
+        <p>
+            <span class='dislike-count'>dislikes</span>
+        </p>
     </div>`
     
     post.querySelector('#like').addEventListener('click', () =>{
@@ -29,6 +31,22 @@ function renderOneDish(dish){
         dish.dislikes +=1;
         post.querySelector('.dislike-count').textContent = dish.dislikes
         updateDislikes(dish)
+    })
+    
+    let likeCount = post.querySelector('.like-count')
+    likeCount.addEventListener('mouseover', function(){
+         likeCount.textContent = `${dish.likes}`
+    })
+    likeCount.addEventListener('mouseleave', function(){
+        likeCount.textContent='likes'
+    })
+
+    let dislikeCount = post.querySelector('.dislike-count')
+    dislikeCount.addEventListener('mouseover', function(){
+         dislikeCount.textContent = `${dish.dislikes}`
+    })
+    dislikeCount.addEventListener('mouseleave', function(){
+        dislikeCount.textContent='dislikes'
     })
 
     document.querySelector('#post-container').appendChild(post)

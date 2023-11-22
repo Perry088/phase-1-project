@@ -5,7 +5,7 @@
       "name": "neapolitan style pizza",
       "description": "A basic dough, raw tomatoes, fresh mozzarella cheese, fresh basil, and olive oil.",
       "image": "https://media-cldnry.s-nbcnews.com/image/upload/newscms/2020_43/1623947/margarita-pizza-today-102220-tease.jpg",
-      "likes": 3,
+      "likes": 4,
       "dislikes": 3
     },
     {
@@ -37,7 +37,7 @@
       "name": "philly cheese steak",
       "description": "A sandwich made of thinly sliced beef cooked on a griddle and served on a sliced roll with cheese, onions, and peppers.",
       "image": "https://images.themodernproper.com/billowy-turkey/production/posts/2022/PhillyCheesesteaks_12.jpg?w=960&h=960&q=82&fm=jpg&fit=crop&dm=1674669377&s=ba2c4045a89595799b5bd72c403ffe0c",
-      "likes": 0,
+      "likes": 1,
       "dislikes": 0
     },
     {
