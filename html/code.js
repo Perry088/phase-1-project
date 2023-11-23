@@ -3,8 +3,8 @@
 function renderOneDish(dish){
     let post =document.createElement('li')
     post.className = 'post'
-    post.innerHTML = `
-   <image src='${dish.image}'>
+    post.innerHTML = 
+   `<image src='${dish.image}'>
    <div class='content'>
         <h1>${dish.name}</h1>
         <p>${dish.description}</p>

@@ -1,28 +1,32 @@
 body{
+  background: url(cutting_board_background.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: black;
     font-family: Impact,sans-serif;
     letter-spacing: 3px;
     
 }
 header{
-    background-color: rgb(51, 40, 117);
+    background-color:#A95E5E;
       color: #fff;
       padding: 10px;
       text-align: center;
       font-size: xx-large;
     }
     main {
-        max-width: 600px;
+        max-width: 1000px;
         margin: 20px auto;
         border: 5px solid #ddd;
-        color:rgb(51, 40, 117) ;
+        color:#d5c4b4 ;
       }
       form {
         text-align: center;
-        background-color: rgb(155, 233, 247);
+        background-color: #55606b;
         font-size: large;
       }
       form label,
@@ -30,14 +34,14 @@ header{
       display: block;
       margin: 10px auto;
       margin-bottom: 10px;
-      border-color:rgb(155, 233, 247) ;
+      border-color:#55606b ;
       border-radius: 12px;
       width: 300px;
       height: 30px;
     }
     button{
-        background-color: rgb(51, 40, 117);
-        color:#fff;
+        background-color: #d5c4b4;
+        color:#55606b ;
         font-family: Impact,sans-serif;
         font-size: larger;
         letter-spacing: 2px;
@@ -49,13 +53,13 @@ header{
     }
     button:hover{
         background-color: #fff;
-        color:rgb(51, 40, 117);
+        color:#d5c4b4;
     }
       .post {
         border-bottom: 1px solid #ddd;
         padding: 10px;
         text-align: left;
-        background-color: rgb(155, 233, 247);
+        background-color: #55606b;
       }
       .post img{
         max-width: 100%;
