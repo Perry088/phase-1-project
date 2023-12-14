@@ -1,6 +1,6 @@
 //post 
 
-function renderOneDish(dish){
+function createDish(dish){
     let post =document.createElement('li')
     post.className = 'post'
     post.innerHTML = 
@@ -55,7 +55,7 @@ function renderOneDish(dish){
 function getDishes(){
     fetch('http://localhost:3000/dishes')
     .then(res=> res.json())
-    .then(dishs=> dishs.forEach(dish => renderOneDish(dish)))
+    .then(dishs=> dishs.forEach(dish => createDish(dish)))
 }
 
 function initialize(){
@@ -73,7 +73,7 @@ function handleSubmit(e){
         image:e.target.image_url.value,
         description:e.target.description.value
     }
-    renderOneDish(dish)
+    createDish(dish)
     addDish(dish)
 }
 function addDish(dish){

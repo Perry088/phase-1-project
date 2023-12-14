@@ -5,7 +5,7 @@
       "name": "neapolitan style pizza",
       "description": "A basic dough, raw tomatoes, fresh mozzarella cheese, fresh basil, and olive oil.",
       "image": "https://media-cldnry.s-nbcnews.com/image/upload/newscms/2020_43/1623947/margarita-pizza-today-102220-tease.jpg",
-      "likes": 4,
+      "likes": 17,
       "dislikes": 3
     },
     {
@@ -13,40 +13,48 @@
       "name": "pad thai",
       "description": "A traditional Thai dish made with stir-fried rice noodles, eggs, tofu, beansprouts, and a multitude of spices.",
       "image": "https://i.imgur.com/rsjEAdZ.jpg",
-      "likes": 0,
-      "dislikes": 0
+      "likes": 20,
+      "dislikes": 3
     },
     {
       "id": 3,
       "name": "street tacos",
       "description": "corn tortilla filled with meat, onion, cilantro, and salsa.",
       "image": "https://i2.wp.com/www.downshiftology.com/wp-content/uploads/2018/04/Carne-Asada-Tacos-3.jpg",
-      "likes": 0,
-      "dislikes": 0
+      "likes": 15,
+      "dislikes": 1
     },
     {
       "id": 4,
       "name": "lemon butter salmon",
       "description": "salmon baked with lemon butter and different spices.",
       "image": "https://natashaskitchen.com/wp-content/uploads/2018/05/Pan-Seared-Salmon-with-Lemon-Butter-Sauce-5.jpg",
-      "likes": 0,
-      "dislikes": 0
+      "likes": 10,
+      "dislikes": 3
     },
     {
       "id": 5,
       "name": "philly cheese steak",
       "description": "A sandwich made of thinly sliced beef cooked on a griddle and served on a sliced roll with cheese, onions, and peppers.",
       "image": "https://images.themodernproper.com/billowy-turkey/production/posts/2022/PhillyCheesesteaks_12.jpg?w=960&h=960&q=82&fm=jpg&fit=crop&dm=1674669377&s=ba2c4045a89595799b5bd72c403ffe0c",
-      "likes": 1,
-      "dislikes": 0
+      "likes": 15,
+      "dislikes": 4
     },
     {
       "name": "Steak Frites",
       "image": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Reel_and_Brand_-_September_2021_-_Sarah_Stierch_05.jpg",
       "description": "a dish of steak cut into strips and fried with butter and garlic until browned, and served with French fries.",
       "id": 6,
-      "likes": 0,
-      "dislikes": 0
+      "likes": 18,
+      "dislikes": 2
+    },
+    {
+      "name": "Pho",
+      "image": "https://www.recipetineats.com/wp-content/uploads/2019/04/Beef-Pho_6.jpg",
+      "description": "A a Vietnamese soup dish consisting of broth, rice noodles, herbs, and meat",
+      "id": 7,
+      "likes": 6,
+      "dislikes": 3
     }
   ]
 }
